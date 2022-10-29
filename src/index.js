@@ -1,14 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import './index.css';
-import App from './App';
+import NewEmployeeView from './Views/NewEmployeeView.tsx';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+  <Router>
+    <div>
+      <Routes>
+        <Route element={<NewEmployeeView />} exact path="/" />
+      </Routes>
+    </div>
+  </Router>
 );
 
 // If you want to start measuring performance in your app, pass a function

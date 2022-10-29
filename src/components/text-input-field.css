@@ -1,0 +1,17 @@
+.text-input-field-container {
+  width: 439px;
+  height: 72px;
+  display: flex;
+  position: relative;
+  align-items: center;
+  padding-left: 2px;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.text-input-field-text {
+  width: 300px;
+}
+
+
+
+

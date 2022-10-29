@@ -1,0 +1,18 @@
+.heading-and-controls-container {
+  width: 100%;
+  height: 85px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.heading-and-controls-text1 {
+  display: inline-block;
+  font-size: 32px;
+  padding-left: 50px;
+  text-transform: capitalize;
+}
+.heading-and-controls-button {
+  right: 1;
+  display: inline-block;
+}
+
