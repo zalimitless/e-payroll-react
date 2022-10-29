@@ -1,0 +1,13 @@
+.radio-options-field-container {
+  width: 439px;
+  height: 56px;
+  display: flex;
+  position: relative;
+  align-items: center;
+  padding-left: 2px;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.radio-options-field-text {
+  width: 300px;
+}

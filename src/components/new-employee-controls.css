@@ -1,0 +1,20 @@
+.new-employee-controls-container {
+  width: 183px;
+  height: 62px;
+  display: flex;
+  position: relative;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+}
+.new-employee-controls-button {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.new-employee-controls-button1 {
+  color: #ffffff;
+  margin-left: 5px;
+  margin-right: 5px;
+  background-color: #0016ff;
+}
+
