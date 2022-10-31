@@ -1,19 +1,18 @@
 import React, { useMemo } from "react";
 import { useTable, usePagination, useRowSelect } from "react-table";
 import { COLUMNS } from "./columns";
-import MOCK_DATA from "./MOCK_DATA.json";
 import { Checkbox } from "./TableCheckbox";
 
 import "../../Styling/EmployeeTable.css";
 
-function EmployeeTable() {
-  const columns = useMemo(() => COLUMNS, []);
-  const data = useMemo(() => MOCK_DATA, []);
+function EmployeeTable(props) {
+  const columns = useMemo(() => COLUMNS, [COLUMNS]);
+  const data = useMemo(() => props.data, [props.data]);
 
   const tableInstance = useTable(
     {
       columns,
-      data,
+      data, 
     },
     usePagination,
     useRowSelect,
@@ -52,10 +51,6 @@ function EmployeeTable() {
 
   const { pageIndex } = state;
 
-  // selectedFlatRows contains the selected data from the table that is needed to identify the employee that we are working with.
-  // We will always get only 1 record in this case
-  console.log(selectedFlatRows[0]?.allCells[1]?.value);
-
   return (
     <>
       <table {...getTableProps()}>
@@ -79,6 +74,7 @@ function EmployeeTable() {
                   toggleAllRowsSelected(false);
                   // @ts-ignore
                   row.toggleRowSelected(!row.isSelected);
+                  props.selectedElement(row?.allCells[1]?.value);
                 }}
               >
                 {row.cells.map((cell) => {
@@ -128,8 +124,5 @@ function EmployeeTable() {
     </>
   );
 }
-
-EmployeeTable.defaultProps = {};
-EmployeeTable.propTypes = {};
 
 export default EmployeeTable;

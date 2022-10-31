@@ -5,18 +5,18 @@ export const COLUMNS = [
     },
     {
         Header: 'First Name',
-        accessor: 'first_Names',
+        accessor: 'firstNames',
     },
     {
         Header: 'Last Name',
-        accessor: 'last_Names',
+        accessor: 'lastName',
     },
     {
         Header: 'Salutation',
-        accessor: 'Salutation',
+        accessor: 'salutation',
     },
     {
         Header: 'Profile Colour',
-        accessor: 'profile_Colour',
+        accessor: 'profileColour',
     }
 ];

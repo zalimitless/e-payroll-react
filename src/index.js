@@ -7,10 +7,13 @@ import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
+
+// Add the Payroll Employee Add new routes in here.
+
   <Router>
     <div>
       <Routes>
-        <Route element={<NewEmployeeView />} exact path="/" />
+        <Route element={<NewEmployeeView />} exact path="/payroll/employeeinformation/newemployee" />
       </Routes>
     </div>
   </Router>

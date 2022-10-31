@@ -10,7 +10,7 @@ const NewEmployeeControls = (props) => {
       <button className="new-employee-controls-button button">
         {props.Cancel_Button}
       </button>
-      <button className="new-employee-controls-button1 button">
+      <button className="new-employee-controls-button1 button" style={{"backgroundColor" : props.color}}>
         {props.Save_Button}
       </button>
     </div>
